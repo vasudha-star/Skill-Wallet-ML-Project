@@ -180,7 +180,11 @@ python epic6_deployment.py
 
 
 ---
-
+#Authors
+Madugula Vasudha
+Pasham Srikar
+Joy Soni
+Chintha Rohith Sai Akshay
 
 ## Notes
 
