@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>About</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+<style>
+
+body{
+    background:#f2f2f2;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    background:black !important;
+}
+
+
+/* FULL SCREEN */
+
+.main-section{
+
+    min-height:92vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+
+/* BIG IMAGE */
+
+.about-img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0px 8px 25px rgba(0,0,0,0.4);
+
+}
+
+
+/* BIG TEXT */
+
+.step-block{
+
+    margin-bottom:35px;
+
+}
+
+
+.step-block h4{
+
+    font-size:28px;
+
+    font-weight:600;
+
+}
+
+
+.step-block p{
+
+    font-size:18px;
+
+    color:#444;
+
+}
+
+
+/* BIG ICON */
+
+.step-icon{
+
+    font-size:32px;
+
+    color:green;
+
+    margin-right:12px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-dark navbar-expand-lg">
+
+<div class="container-fluid">
+
+<a class="navbar-brand fs-4">
+AUTO INSURANCE CLAIMS.
+</a>
+
+<div>
+
+<a href="/" class="btn btn-dark text-white">Home</a>
+
+<a href="/about" class="btn btn-dark text-white">About</a>
+
+<a href="/predict_page" class="btn btn-outline-warning">Predict</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- MAIN -->
+
+<div class="container-fluid main-section">
+
+<div class="row w-100 align-items-center">
+
+
+
+<!-- IMAGE -->
+
+<div class="col-md-6 text-center">
+
+<img src="{{ url_for('static', filename='br.png') }}"
+class="about-img">
+
+</div>
+
+
+
+<!-- TEXT -->
+
+<div class="col-md-6 px-5">
+
+
+
+<div class="step-block">
+
+<h4>
+<i class="bi bi-database step-icon"></i>
+Data Collection and Preprocessing
+</h4>
+
+<p>
+Cleaning missing values, encoding categorical data,
+and preparing dataset.
+</p>
+
+</div>
+
+
+
+<div class="step-block">
+
+<h4>
+<i class="bi bi-gear step-icon"></i>
+Feature Engineering and Model Selection
+</h4>
+
+<p>
+Selecting important features and choosing best ML model.
+</p>
+
+</div>
+
+
+
+<div class="step-block">
+
+<h4>
+<i class="bi bi-cpu step-icon"></i>
+Model Training and Evaluation
+</h4>
+
+<p>
+Training Random Forest, SVM, KNN and evaluating accuracy.
+</p>
+
+</div>
+
+
+
+<div class="step-block">
+
+<h4>
+<i class="bi bi-globe step-icon"></i>
+Model Deployment
+</h4>
+
+<p>
+Flask web application used for prediction.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
